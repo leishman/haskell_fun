@@ -8,3 +8,7 @@ doubleSmallNumber x = if x > 100
 
 
 length' xs = sum [1 | _ <- xs]
+
+------------------------
+
+-- Some pattern matching
