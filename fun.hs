@@ -25,3 +25,9 @@ sayMe 4 = "Four!"
 sayMe 5 = "Five!"
 sayMe x = "Not between 1 and 5"
 
+-- recursive factorial
+
+factorial :: (Integral a) => a -> a
+factorial 0 = 1
+factorial x = x * factorial (x - 1)
+
