@@ -23,7 +23,7 @@ sayMe 2 = "Two!"
 sayMe 3 = "Three!"
 sayMe 4 = "Four!"
 sayMe 5 = "Five!"
-sayMe x = "Not between 1 and 5"
+sayMe x = "Not between 1 and 5" -- this gets executed if the above 'conditions' are not met
 
 -- recursive factorial
 
@@ -44,4 +44,10 @@ addVectors (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)
 
 third :: (a, b, c) -> c
 third (_, _, z) = z -- '_' means we don't care what it is
+
+-- what's the x:xs pattern all about?
+
+head' :: [a] -> a
+head' [] = error "Can't call head on an empty list, dummy!"
+head' (x:_) = x
 
